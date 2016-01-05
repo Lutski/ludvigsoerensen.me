@@ -1,0 +1,64 @@
+#starting-block
+  background-color: #d35050
+  width: 100%
+
+  .x
+    max-width: 1000px
+    margin-left: auto
+    margin-right: auto
+
+  nav
+    padding-right: 10px
+    padding-top: 20px
+
+    li
+      list-style: none
+      display: inline
+      float: right
+      margin-right: 20px
+      font-size: 16px
+
+      a
+        color: #a03d3d
+        font-weight: bold
+        text-decoration: none
+        transition: ease-in-out 300ms
+
+        &:hover
+          color: #703333
+        // &:link
+        //   color: #a03d3d
+        // &:visited
+        //   color: #a03d3d
+        // &:active
+        //   color: #a03d3d
+  .contain-startblock
+    margin-top: 60px
+
+    img
+      margin-bottom: -4px
+
+  .quick-about
+    color: white
+    text-align: center
+    margin-top: 50px
+
+    h1, p
+      max-width: 400px
+      float: center
+      margin-right: auto
+      margin-left: auto
+
+    h1
+
+
+
+
+
+// Media queries
+
+$breakpoint-tablet: 768px
+@media (max-width: $breakpoint-tablet)
+  #starting-block
+    .quick-about
+      margin-top: 20px
