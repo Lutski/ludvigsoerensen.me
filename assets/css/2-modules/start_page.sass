@@ -1,3 +1,13 @@
+// Extra sass that is used more than once
+.grey-line
+  height: 4px
+  width: 150px
+  background-color: #eaeaea
+  border: none
+  margin-top: -10px
+  margin-bottom: 40px
+
+// Start of css code
 #starting-block
   background-color: #d35050
   width: 100%
@@ -15,7 +25,7 @@
       list-style: none
       display: inline
       float: right
-      margin-right: 20px
+      margin-right: 30px
       font-size: 16px
 
       a
@@ -49,14 +59,100 @@
       margin-right: auto
       margin-left: auto
 
+    p
+      font-size: 18px
+
     h1
+      font-size: 23px
 
 
 
+// About section
+.about-section
+  margin-left: auto
+  margin-right: auto
+  display: block
+  float: center
+  text-align: center
 
+  .content
+    max-width: 550px
+    margin-left: auto
+    margin-right: auto
+
+    h1
+      margin-bottom: -15px
+    p
+      font-size: 18px
+      margin-bottom: -10px
+
+  img
+    height: 250px
+    margin-top: 60px
+
+  .line
+    height: 100px
+    margin-bottom: 20px
+
+
+
+// Work/Projects section
+.work-section
+  margin-left: auto
+  margin-right: auto
+  display: block
+  float: center
+  text-align: center
+  max-width: 1000px
+
+  img
+    height: 250px
+
+  .guiding-lines
+    width: 50%
+
+  .grid
+    h1
+      margin-bottom: -15px
+
+  .round-red-btn
+    background-color: #d35050
+    padding: 10px 15px
+    text-decoration: none
+    border-radius: 50px
+    color: white
+    transition: ease-in-out 300ms
+
+    &:hover
+      background-color: #c14c4c
+
+  .line
+    height: 100px
+    margin-top: 50px
+
+// Articles section
+.article-section
+
+  h1
+    text-align: center
+    margin-top: 30px
+
+
+
+// Mobile stuff
+.mobile-nav-toggle
+  display: none
+
+  .mobile-btn
+    height: 20px
+
+@media (max-width: 768px)
+  .mobile-nav-toggle
+    display: block
+
+    .mobile-btn
 
 // Media queries
-
 $breakpoint-tablet: 768px
 @media (max-width: $breakpoint-tablet)
   #starting-block
