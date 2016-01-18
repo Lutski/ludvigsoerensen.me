@@ -1,4 +1,7 @@
 // Extra sass that is used more than once
+
+
+
 .grey-line
   height: 4px
   width: 150px
@@ -7,6 +10,16 @@
   margin-top: -10px
   margin-bottom: 40px
 
+.round-red-btn
+  background-color: #d35050
+  padding: 10px 15px
+  text-decoration: none
+  border-radius: 50px
+  color: white
+  transition: ease-in-out 300ms
+
+  &:hover
+    background-color: #c14c4c
 // Start of css code
 #starting-block
   background-color: #d35050
@@ -115,27 +128,66 @@
     h1
       margin-bottom: -15px
 
-  .round-red-btn
-    background-color: #d35050
-    padding: 10px 15px
-    text-decoration: none
-    border-radius: 50px
-    color: white
-    transition: ease-in-out 300ms
-
-    &:hover
-      background-color: #c14c4c
-
   .line
     height: 100px
     margin-top: 50px
 
 // Articles section
 .article-section
+  margin-left: auto
+  margin-right: auto
+  display: block
+  float: center
+  text-align: center
+  max-width: 800px
 
   h1
     text-align: center
     margin-top: 30px
+
+  img
+    height: 200px
+
+  .article-description
+    margin-left: -60px
+    padding-right: 80px
+    h1
+      font-size: 25px
+      margin-bottom: -10px
+    p
+      font-size: 18px
+
+
+  .recent-articles
+    max-width: 1200px
+    margin-top: 20px
+
+    .grid__col
+      margin-top: 35px
+
+    h1
+      font-size: 25px
+      margin-bottom: -10px
+      margin-top: 10px
+
+    p
+      margin-bottom: -10px
+      margin-left: 20px
+      margin-right: 20px
+
+  .line
+    height: 100px
+    margin-top: 50px
+    margin-bottom: 20px
+
+
+@media (max-width: 768px)
+  .article-section
+
+    .article-description
+      margin-left: 0px
+      padding-right: 0px
+
 
 
 

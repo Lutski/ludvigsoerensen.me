@@ -910,6 +910,9 @@ th {
 body {
   font-family: 'Nunito', sans-serif; }
 
+.link {
+  color: #7d9eb7; }
+
 p {
   font-weight: lighter; }
 
@@ -960,6 +963,16 @@ p {
   border: none;
   margin-top: -10px;
   margin-bottom: 40px; }
+
+.round-red-btn {
+  background-color: #d35050;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  color: white;
+  transition: ease-in-out 300ms; }
+  .round-red-btn:hover {
+    background-color: #c14c4c; }
 
 #starting-block {
   background-color: #d35050;
@@ -1037,22 +1050,52 @@ p {
     width: 50%; }
   .work-section .grid h1 {
     margin-bottom: -15px; }
-  .work-section .round-red-btn {
-    background-color: #d35050;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 50px;
-    color: white;
-    transition: ease-in-out 300ms; }
-    .work-section .round-red-btn:hover {
-      background-color: #c14c4c; }
   .work-section .line {
     height: 100px;
     margin-top: 50px; }
 
-.article-section h1 {
+.article-section {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: center;
   text-align: center;
-  margin-top: 30px; }
+  max-width: 800px; }
+  .article-section h1 {
+    text-align: center;
+    margin-top: 30px; }
+  .article-section img {
+    height: 200px; }
+  .article-section .article-description {
+    margin-left: -60px;
+    padding-right: 80px; }
+    .article-section .article-description h1 {
+      font-size: 25px;
+      margin-bottom: -10px; }
+    .article-section .article-description p {
+      font-size: 18px; }
+  .article-section .recent-articles {
+    max-width: 1200px;
+    margin-top: 20px; }
+    .article-section .recent-articles .grid__col {
+      margin-top: 35px; }
+    .article-section .recent-articles h1 {
+      font-size: 25px;
+      margin-bottom: -10px;
+      margin-top: 10px; }
+    .article-section .recent-articles p {
+      margin-bottom: -10px;
+      margin-left: 20px;
+      margin-right: 20px; }
+  .article-section .line {
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 20px; }
+
+@media (max-width: 768px) {
+  .article-section .article-description {
+    margin-left: 0px;
+    padding-right: 0px; } }
 
 .mobile-nav-toggle {
   display: none; }
