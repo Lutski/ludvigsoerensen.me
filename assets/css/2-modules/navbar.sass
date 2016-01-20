@@ -1,0 +1,48 @@
+header
+  padding-top: 20px
+  padding-bottom: 0px
+  position: relative
+  width: 100%
+  height: 60px
+  background-color: #d35050
+
+  li
+    list-style: none
+    display: inline
+    float: right
+    margin-right: 30px
+    font-size: 16px
+
+
+    a
+      color: #a03d3d
+      font-weight: bold
+      text-decoration: none
+      transition: ease-in-out 300ms
+
+      &:hover
+        color: #703333
+      // &:link
+      //   color: #a03d3d
+      // &:visited
+      //   color: #a03d3d
+      // &:active
+      //   color: #a03d3d
+
+header.clone
+  position: fixed
+  top: -65px
+  left: 0
+  right: 0
+  z-index: 999
+  transition: 0.2s top cubic-bezier(.3,.73,.3,.74)
+  padding-top: 0px
+  vertical-align: middle
+  line-height: 50px
+
+body.down header.clone
+  top: 0
+
+
+
+// @media (max-width: 768px)
