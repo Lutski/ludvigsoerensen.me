@@ -1,13 +1,6 @@
 $(document).ready(function() {
   smoothScroll(300);
-
-  var $header = $("header"),
-      $clone = $header.before($header.clone().addClass("clone"));
-
-  $(window).on("scroll", function() {
-    var fromTop = $("body").scrollTop();
-    $('body').toggleClass("down", (fromTop > 200));
-  });
+  navbarPopdown();
 });
 
 function smoothScroll (duration) {
@@ -22,4 +15,14 @@ function smoothScroll (duration) {
 	        }, duration);
 	    }
 	});
+}
+
+function navbarPopdown() {
+  var $header = $("header"),
+      $clone = $header.before($header.clone().addClass("clone"));
+
+  $(window).on("scroll", function() {
+    var fromTop = $("body").scrollTop();
+    $('body').toggleClass("down", (fromTop > 200));
+  });
 }
