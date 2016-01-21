@@ -1,0 +1,46 @@
+// Media queries for start_page.html
+@media (max-width: 700px)
+  .about-section
+    .content
+      p
+        max-width: 500px
+        margin-left: auto
+        margin-right: auto
+  .work-section
+    .grid
+      .grid__col
+        p
+          max-width: 400px
+          margin-left: auto
+          margin-right: auto
+
+  .article-section
+    .grid__col
+      p
+        max-width: 300px
+        margin-left: auto !important
+        margin-right: auto !important
+
+    .article-description
+      max-width: 300px
+      margin-left: auto !important
+      margin-right: auto !important
+      padding-right: 0 !important
+
+.mobile-nav-toggle
+  display: none
+
+  .mobile-btn
+    height: 20px
+
+@media (max-width: 768px)
+  .mobile-nav-toggle
+    display: block
+
+    .mobile-btn
+
+$breakpoint-tablet: 768px
+@media (max-width: $breakpoint-tablet)
+  #starting-block
+    .quick-about
+      margin-top: 20px

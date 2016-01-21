@@ -928,6 +928,15 @@ p {
 .whitespace {
   height: 2000px; }
 
+.show-on-small {
+  display: none; }
+
+@media (max-width: 700px) {
+  .hide-on-small {
+    display: none; }
+  .show-on-small {
+    display: block; } }
+
 .extra-pages {
   background-color: #CE4D4D;
   width: 100%;
@@ -955,6 +964,38 @@ p {
     color: white; }
   .lost p a:active {
     color: white; }
+
+@media (max-width: 700px) {
+  .about-section .content p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; }
+  .work-section .grid .grid__col p {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+  .article-section .grid__col p {
+    max-width: 300px;
+    margin-left: auto !important;
+    margin-right: auto !important; }
+  .article-section .article-description {
+    max-width: 300px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-right: 0 !important; } }
+
+.mobile-nav-toggle {
+  display: none; }
+  .mobile-nav-toggle .mobile-btn {
+    height: 20px; }
+
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block; } }
+
+@media (max-width: 768px) {
+  #starting-block .quick-about {
+    margin-top: 20px; } }
 
 .grey-line {
   height: 4px;
@@ -1059,7 +1100,7 @@ p {
     .article-section .article-description p {
       font-size: 18px; }
   .article-section .recent-articles {
-    max-width: 1200px;
+    max-width: 800px;
     margin-top: 20px; }
     .article-section .recent-articles .grid__col {
       margin-top: 35px; }
@@ -1075,24 +1116,6 @@ p {
     height: 100px;
     margin-top: 50px;
     margin-bottom: 20px; }
-
-@media (max-width: 768px) {
-  .article-section .article-description {
-    margin-left: 0px;
-    padding-right: 0px; } }
-
-.mobile-nav-toggle {
-  display: none; }
-  .mobile-nav-toggle .mobile-btn {
-    height: 20px; }
-
-@media (max-width: 768px) {
-  .mobile-nav-toggle {
-    display: block; } }
-
-@media (max-width: 768px) {
-  #starting-block .quick-about {
-    margin-top: 20px; } }
 
 header {
   padding-top: 20px;
@@ -1124,7 +1147,7 @@ header.clone {
   transition: 0.2s top cubic-bezier(0.3, 0.73, 0.3, 0.74);
   padding-top: 0px;
   vertical-align: middle;
-  line-height: 50px; }
+  line-height: 55px; }
 
 body.down header.clone {
   top: 0; }
