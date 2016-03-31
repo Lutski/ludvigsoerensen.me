@@ -32,7 +32,7 @@
   </div>
 
   <div class="about-section" id="about">
-    <img src="assets/img/imac.svg" alt="There should be an image here :O" />
+    <img src="assets/img/ludvig-on-display.svg" alt="There should be an image here :O" />
     <div class="content">
       <h1>Who am I?</h1>
       <p>What is that stupid illustration supposed to look like? Well that’s my face... My name is Ludvig Sørensen. When I'm not training my lightsaber skills and fighting space crime, I like to create Ruby on Rails & IOS apps, and I try to be a better illustrator. I also write and design articles. Feel free to take a tour of the website, you could see my <a href="#projects" class="link">projects</a>, my <a href="#articles" class="link">articles</a> or you could even write me an <a href="#footer" class="link">email</a>, please do it i’m so lonely :(</p>
@@ -67,19 +67,19 @@
 
     <div class="grid">
       <div class="grid__col grid__col--1-of-2 show-on-small">
-        <img src="assets/img/imac.svg" alt="There should be an image here :O" />
+        <img src="assets/img/website-illustration.svg" alt="There should be an image here :O" class="illustration"/>
       </div>
 
       <div class="grid__col grid__col--1-of-2">
-        <h1>Winelog.xyz</h1>
+        <h1>Launching a new web app</h1>
         <p>
-          Wine wine wine... You see whenever you have a nice wine, you would like to scribble down a few thoughts and a rating down wouldn't you? Well winelog.xyz does that for you. You're able to create new wines to your own winelogs, order them after rating, write comments, add images and even create your own rating system. Sounds pretty sweet right, the project is open source on github, and the app itself is build in Rails.
+          I am in the process of building a brand new web app. Its purpose is to provide coding projects/challenges on different topics, languages and difficulties. You'll be able to improve your skills in every aspect by working through projects that suit your skill.
         </p>
         <a href="https://github.com/Lutski/winelog.xyz" class="link">LINK TO PROJECT</a>
       </div>
 
       <div class="grid__col grid__col--1-of-2 hide-on-small">
-        <img src="assets/img/imac.svg" alt="There should be an image here :O" />
+        <img src="assets/img/website-illustration.svg" alt="There should be an image here :O" class="illustration"/>
       </div>
     </div>
 
@@ -90,22 +90,22 @@
 
     <div class="grid">
       <div class="grid__col grid__col--1-of-2">
-        <img src="assets/img/imac.svg" alt="There should be an image here :O" />
+        <img src="assets/img/youtube-illustration.svg" alt="There should be an image here :O" />
       </div>
 
       <div class="grid__col grid__col--1-of-2">
-        <h1>30 day illustration challenge</h1>
+        <h1>Trying out that youtube thing</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+          I have set myself on quest, to create a youtube channel, I will post weekly videos on topics including, but not limited to Ruby on Rails, Swift and Web development/design.
         </p>
         <a href="#" class="link">LINK TO PROJECT</a>
       </div>
     </div>
     <br><br><br>
     <div class="grid">
-      <div class="grid__col grid__col--1-of-1">
+      <!-- <div class="grid__col grid__col--1-of-1">
         <a href="#" class="round-red-btn">See all projects</a>
-      </div>
+      </div> -->
 
       <div class="grid__col grid__col--1-of-1 grid__col--centered">
         <img src="assets/img/line.svg" alt="There should be an image here :O" class="line" />
@@ -131,54 +131,25 @@
       </div>
 
       <div class="recent-articles">
-        <div class="grid__col grid__col--1-of-2">
-          <h1>My life as a alley cat</h1>
-          <p>
-            22. November 2015
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt...
-          </p>
-        </div>
 
-        <div class="grid__col grid__col--1-of-2">
-          <h1>North korea!</h1>
-          <p>
-            22. November 2015
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt...
-          </p>
-        </div>
+        {% for post in site.posts %}
+          <div class="grid__col grid__col--1-of-2">
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p>
+              {{ post.date | date_to_string }}
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt...
+            </p>
+          </div>
+        {% endfor %}
 
-        <div class="grid__col grid__col--1-of-2">
-          <h1>Why I love illustrations</h1>
-          <p>
-            22. November 2015
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt...
-          </p>
-        </div>
-
-        <div class="grid__col grid__col--1-of-2">
-          <h1>LEGO is king!</h1>
-          <p>
-            22. November 2015
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt...
-          </p>
-        </div>
       </div>
       <br><br><br>
       <div class="grid">
         <div class="grid__col grid__col--1-of-1">
-          <a href="#" class="round-red-btn">See all articles</a>
+          <a href="/articles" class="round-red-btn">See all articles</a>
         </div>
 
         <div class="grid__col grid__col--1-of-1 grid__col--centered">
