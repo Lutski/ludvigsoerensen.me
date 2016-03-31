@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Arimo', sans-serif;
+}
+
+.menu-clicked {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  position: relative;
+  display: none;
+}
+
+.menu-clicked ul {
+  list-style-type: none;
+}
+
+.menu-clicked ul li {
+
+}
+
+.menu-clicked ul li button {
+  border: none;
+
+}
+
+
+/*
+Resource
+*/
+article {
+  height: 100%;
+  width: 100%;
+  background-color: #F2F3F4;
+}
+
+article .post-count h1 {
+  margin: 0;
+  text-align: center;
+  padding-top: 60px;
+  color: #D7DCE2;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+article .resource-box {
+  background-color: #EAF3F4;
+  width: 500px;
+  max-width: 500px;
+  float: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 5px 5px 10px #888888;
+
+}
+
+article .content-wrapper {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+article .content-wrapper h1 {
+  margin-top: 0px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+article .content-wrapper h1, p {
+  text-align: center;
+  padding-bottom: 0px;
+  color: #454E5B;
+}
+
+article .content-wrapper p {
+  text-align: center;
+  font-size: 17px;
+}
+
+article .content-wrapper a {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #8DB9C9;
+}
+
+
+/*
+Navigation
+*/
+.navigation {
+  text-align: center;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation ul li {
+  display: inline;
+}
+
+.navigation ul li a .nav-arrow {
+  height: 50px;
+}
+
+.navigation ul li a .nav-menu-btn {
+  height: 60px;
+}
+
+
+
+
+.post-2, .post-3 {
+  display: none;
+}
