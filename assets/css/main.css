@@ -1075,6 +1075,8 @@ p {
     height: 250px; }
   .work-section .illustration {
     width: auto; }
+  .work-section .png-image {
+    height: 150px; }
   .work-section .guiding-lines {
     width: 50%; }
   .work-section .grid h1 {
