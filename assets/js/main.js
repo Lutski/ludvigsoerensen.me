@@ -3,20 +3,20 @@ $(document).ready(function() {
   navbarPopdown();
 
 
-  var currentFace = "(>'-')>"
-  var firstFace = "(>'-')>"
-  var secondFace = "<('-'<)"
-  var isFirstFace = true
-  window.setInterval(function() {
-    if (isFirstFace == true) {
-      currentFace = secondFace
-      isFirstFace = false
-    } else {
-      currentFace = firstFace
-      isFirstFace = true
-    }
-    $('html').prepend("<!--\n" + currentFace + "\nLooking through my code bruh?!?\n-->")
-  }, 1000);
+  // var currentFace = "(>'-')>"
+  // var firstFace = "(>'-')>"
+  // var secondFace = "<('-'<)"
+  // var isFirstFace = true
+  // window.setInterval(function() {
+  //   if (isFirstFace == true) {
+  //     currentFace = secondFace
+  //     isFirstFace = false
+  //   } else {
+  //     currentFace = firstFace
+  //     isFirstFace = true
+  //   }
+  //   $('html').prepend("<!--\n" + currentFace + "\nLooking through my code bruh?!?\n-->")
+  // }, 1000);
 
 
 
