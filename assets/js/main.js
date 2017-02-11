@@ -1,26 +1,25 @@
 $(document).ready(function() {
-  smoothScroll(300);
-  navbarPopdown();
-
-
-  // var currentFace = "(>'-')>"
-  // var firstFace = "(>'-')>"
-  // var secondFace = "<('-'<)"
-  // var isFirstFace = true
-  // window.setInterval(function() {
-  //   if (isFirstFace == true) {
-  //     currentFace = secondFace
-  //     isFirstFace = false
-  //   } else {
-  //     currentFace = firstFace
-  //     isFirstFace = true
-  //   }
-  //   $('html').prepend("<!--\n" + currentFace + "\nLooking through my code bruh?!?\n-->")
-  // }, 1000);
-
-
-
+  getDay();
 });
+
+function getDay() {
+  var currentDate = new Date();
+  var dayOfTheWeek = currentDate.getDay();
+
+  var weekDays = {
+    0: "Sunday",
+    1: "Monday",
+    2: "Tuesday",
+    3: "Wednesday",
+    4: "Thursday",
+    5: "Friday",
+    6: "Saturday"
+  }
+
+  var getCurrentDay = weekDays[dayOfTheWeek];
+  $('footer .grid h1 span').text(getCurrentDay);
+}
+
 
 function smoothScroll (duration) {
 	$('a[href^="#"]').on('click', function(event) {
@@ -34,14 +33,4 @@ function smoothScroll (duration) {
 	        }, duration);
 	    }
 	});
-}
-
-function navbarPopdown() {
-  var $header = $("header"),
-      $clone = $header.before($header.clone().addClass("clone"));
-
-  $(window).on("scroll", function() {
-    var fromTop = $("body").scrollTop();
-    $('body').toggleClass("down", (fromTop > 200));
-  });
 }
