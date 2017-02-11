@@ -1,0 +1,128 @@
+// ---------- GUIDER/SEPERATOR ---------- \\
+.no-top-padding
+  padding-top: 0px !important
+
+.project-guider
+  padding-top: $section-seperator-fullscreen
+  display: flex
+  align-items: flex-end
+  position: relative
+  left: -11%
+
+  .long-line
+    height: 500px
+
+  .small-line
+    height: 300px
+
+  .line
+    background: #EDEDED
+    width: 2px
+    position: relative
+    left: 11%
+
+
+  .right
+    transform: translate(5%)
+    text-align: left
+
+  .intro-text
+    width: 300px
+    position: absolute
+    left: 10%
+    transform: translate(30px)
+    padding-bottom: 260px
+
+    h2
+      font-size: 16px
+      text-decoration: underline
+      font-weight: bold
+
+    p
+      font-size: 18px
+      font-weight: 200
+
+  .guider-text
+    position: relative
+    left: 10%
+    transform: translate(30px)
+
+    h1
+      font-weight: 400
+      font-size: 30px
+      margin: 0
+      padding-bottom: 5px
+
+    h2
+      font-style: italic
+      font-weight: 200
+      font-size: 25px
+      margin: 0
+
+@media(max-width: 1050px)
+  .project-guider
+    // max-width: 50%
+
+@media(max-width: 650px)
+  .project-guider
+    .intro-text
+      p
+        font-size: 16px
+    .guider-text
+      transform: translate(20px)
+      h1
+        font-size: 25px
+      h2
+        font-size: 20px
+
+
+
+// ---------- HEADER ---------- \\
+header
+  background: #EFEFEF
+  height: 300px
+
+  .grid
+    position: relative
+    top: 50%
+    transform: translate(-50%, -50%)
+
+  h1, h2
+    color: white
+    font-weight: 200
+
+  h1
+    font-size: 60px
+
+  h2
+    font-style: italic
+    font-size: 25px
+    margin-left: 50px
+
+
+// ---------- CONTENT ---------- \\
+#content
+  .grid
+    img
+      width: 100%
+      margin-top: $section-seperator-fullscreen
+      margin-bottom: $section-seperator-fullscreen
+
+    .text
+      font-size: 18px
+      font-weight: 200
+      text-align: center
+      max-width: 600px
+      width: 90%
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+
+@media(max-width: 650px)
+  #content
+    .grid
+      img
+        margin-top: $section-seperator-mobile
+        margin-bottom: $section-seperator-mobile
+      .text
+        font-size: 16px

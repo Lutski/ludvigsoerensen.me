@@ -1,12 +1,6 @@
-@import "0-tools/bourbon/bourbon";
-@import "0-tools/syntax";
-@import "0-tools/normalize";
-@import "0-tools/toast_grid";
-
-@import "1-base/base";
-@import "1-base/variables";
-
 @import "2-modules/extras";
 @import "2-modules/media-queries";
 @import "2-modules/start_page";
 @import "2-modules/footer";
+
+@import "2-modules/project";
